@@ -1,0 +1,82 @@
+{
+  "sitecore": {
+    "context": {
+      "pageEditing": false,
+      "site": {
+        "name": "sitecoredemo"
+      },
+      "pageState": "normal",
+      "language": "en",
+      "itemPath": "/"
+    },
+    "route": {
+      "name": "Home",
+      "displayName": "Home",
+      "fields": {
+        "Title": {
+          "value": "sitecoredemo"
+        },
+        "Content": {
+          "value": ""
+        },
+        "NavigationClass": null,
+        "NavigationTitle": {
+          "value": "sitecoredemo"
+        },
+        "NavigationFilter": [],
+        "ChangeFrequency": {
+          "id": "d23b4654-53a5-4589-8b1b-5665a763d144",
+          "url": "https://sc10_4cm.dev.local/sitecore/login/sitecore/system/Settings/Foundation/Experience-Accelerator/SiteMetadata/Enums/SitemapChangeFrequency/daily",
+          "name": "daily",
+          "displayName": "daily",
+          "fields": {
+            "Value": {
+              "value": "Daily"
+            }
+          }
+        },
+        "Priority": {
+          "id": "19f3e919-4991-495f-9207-e1dadfd06f54",
+          "url": "https://sc10_4cm.dev.local/sitecore/login/sitecore/system/Settings/Foundation/Experience-Accelerator/SiteMetadata/Enums/SitemapPriority/05",
+          "name": "05",
+          "displayName": "0.5",
+          "fields": {
+            "Value": {
+              "value": "0.5"
+            }
+          }
+        },
+        "SxaTags": [],
+        "Page Design": null
+      },
+      "databaseName": "master",
+      "deviceId": "fe5d7fdf-89c0-4d99-9aa3-b5fbd009c9f3",
+      "itemId": "502a993b-df4f-446c-970a-68ef0be1b735",
+      "itemLanguage": "en",
+      "itemVersion": 1,
+      "layoutId": "96e5f4ba-a2cf-4a4c-a4e7-64da88226362",
+      "templateId": "eda82302-fd6b-44fe-8906-032edf50dc3f",
+      "templateName": "Page",
+      "placeholders": {
+        "headless-header": [],
+        "headless-main": [
+          {
+            "uid": "f9af4624-9852-47ef-9e25-6e415f540111",
+            "componentName": "RichText",
+            "dataSource": "/sitecore/content/HeadlessTenant/sitecoredemo/Home/Data/demo",
+            "params": {
+              "DynamicPlaceholderId": "1",
+              "FieldNames": "Default"
+            },
+            "fields": {
+              "Text": {
+                "value": "Hello1"
+              }
+            }
+          }
+        ],
+        "headless-footer": []
+      }
+    }
+  }
+}

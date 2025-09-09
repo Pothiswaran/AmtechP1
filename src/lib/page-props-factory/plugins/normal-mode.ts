@@ -5,12 +5,12 @@ import { layoutServiceFactory } from 'lib/layout-service-factory';
 import { SitecorePageProps } from 'lib/page-props';
 import { pathExtractor } from 'lib/extract-path';
 import { Plugin, isServerSidePropsContext } from '..';
-
+import { constants } from '@sitecore-jss/sitecore-jss-nextjs';
 class NormalModePlugin implements Plugin {
   private dictionaryServices: Map<string, DictionaryService>;
   private layoutServices: Map<string, LayoutService>;
 
-  order = 1;
+  order = 2;
 
   constructor() {
     this.dictionaryServices = new Map<string, DictionaryService>();
@@ -18,6 +18,9 @@ class NormalModePlugin implements Plugin {
   }
 
   async exec(props: SitecorePageProps, context: GetServerSidePropsContext | GetStaticPropsContext) {
+     if (process.env.JSS_MODE === constants.JSS_MODE.DISCONNECTED || props.layoutData) {
+       return props;
+     }
     if (context.preview) return props;
 
     // Get normalized Sitecore item path
