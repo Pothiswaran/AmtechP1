@@ -1,6 +1,6 @@
 import RichText from '../components/RichText';
 import Head from 'next/head';
-import demoData from 'data/demo.json' // import your local JSON
+import demoData from 'data/demo.json'; // import your local JSON
 
 const About = (): JSX.Element => {
   const route = demoData.sitecore.route;
