@@ -37,4 +37,3 @@ class CustomConnectedModePlugin implements Plugin {
 }
 
 export const customConnectedModePlugin = new CustomConnectedModePlugin();
-

@@ -2,7 +2,6 @@ import * as sql from 'mssql';
 import { getDbPool } from 'src/config/db';
 import { Page } from 'src/models/page.model';
 
-
 export async function getPageByPath(path: string): Promise<Page | null> {
   const pool = await getDbPool();
 
