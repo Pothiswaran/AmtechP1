@@ -1,0 +1,20 @@
+{
+  "sitecore": {
+    "route": {
+      "fields": {
+        "Title": { "value": "About" }
+      },
+      "placeholders": {
+        "headless-main": [
+          {
+            "uid": "acefca5c-9787-4643-b525-ef0ab25e22dc",
+            "componentName": "RichText",
+            "fields": {
+              "Text": { "value": "hello from AboutPage" }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

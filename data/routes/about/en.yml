@@ -1,0 +1,19 @@
+# This is a route layout definition for the About page.
+id: about-page
+
+fields:
+  pageTitle: About Us
+
+placeholders:
+  jss-main:
+    - componentName: ContentBlock
+      fields:
+        heading: About Us
+        content: |
+          <p>Welcome to our About page.</p>
+          <p>This is a simple page created for demonstration.</p>
+    - componentName: RichText
+      fields:
+        Text: |
+          <p>This is rich text content.</p>
+          <strong>Bold text</strong> and <em>italic text</em>.
