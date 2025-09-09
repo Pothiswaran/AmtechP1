@@ -18,9 +18,9 @@ class NormalModePlugin implements Plugin {
   }
 
   async exec(props: SitecorePageProps, context: GetServerSidePropsContext | GetStaticPropsContext) {
-     if (process.env.JSS_MODE === constants.JSS_MODE.DISCONNECTED || props.layoutData) {
-       return props;
-     }
+    if (process.env.JSS_MODE === constants.JSS_MODE.DISCONNECTED || props.layoutData) {
+      return props;
+    }
     if (context.preview) return props;
 
     // Get normalized Sitecore item path
